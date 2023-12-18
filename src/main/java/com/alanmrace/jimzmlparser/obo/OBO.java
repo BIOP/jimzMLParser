@@ -117,7 +117,19 @@ public class OBO implements Serializable {
                 String value = curLine.substring(locationOfColon + 1).trim().toLowerCase();
 
                 if ("import".equals(tag)) {
-                    imports.add(new OBO(value, loader));
+                    if (value.startsWith("http://")) {
+                        value = "https://"+value.substring(7);
+                    }
+                    if (value.endsWith(".obo")) {
+                        imports.add(new OBO(value, loader));
+                    } else if (value.endsWith(".owl")) {
+                        // This is the file which is not imported:
+                        // https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.owl
+                        // I couldn't find an owl parser with a low number of dependencies and that works  with Java 8
+                        logger.warning("Unsupported import: "+value);
+                    } else {
+                        logger.warning("Unsupported import: "+value);
+                    }
                 } else if ("default-namespace".equals(tag)) {
                     defaultNamespace = value;
                 } else if ("ontology".equals(tag)) {
