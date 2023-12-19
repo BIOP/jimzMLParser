@@ -43,3 +43,5 @@ src/test/resources/MatrixTests_N2\.imzML\.lz4
 
 .vscode/
 /Ontologies/stato.owl
+/stream_test.ibd
+/stream_test.imzML
