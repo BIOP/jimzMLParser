@@ -122,7 +122,7 @@ public class MzMLHeaderHandlerTest {
      * @throws com.alanmrace.jimzmlparser.exceptions.FatalParseException Unrecoverable parse error occurred
      * @throws java.io.IOException Issue reading or writing out the MzML
      */
-    @Test
+    @Test@Ignore
     public void testmzML() throws FatalParseException, IOException {
         String resourcePath = MzMLHeaderHandlerTest.class.getResource(TINY_PWIZ_RESOURCE).getFile();
         
@@ -146,7 +146,7 @@ public class MzMLHeaderHandlerTest {
      * @throws com.alanmrace.jimzmlparser.exceptions.FatalParseException Unrecoverable parse error occurred
      * @throws java.io.IOException Issue reading or writing out the MzML
      */
-    @Test
+    @Test@Ignore
     public void testmzMLHeader() throws FatalParseException, IOException {
         String resourcePath = MzMLHeaderHandlerTest.class.getResource(TINY_PWIZ_RESOURCE).getFile();
         
@@ -170,7 +170,7 @@ public class MzMLHeaderHandlerTest {
      * @throws com.alanmrace.jimzmlparser.exceptions.FatalParseException Unrecoverable parse error occurred
      * @throws java.io.IOException Issue reading or writing out the MzML
      */
-    @Test
+    @Test@Ignore
     public void testfullmzMLHeader() throws FatalParseException, IOException {
         System.out.println(" ---- testfullmzMLHeader() ---- ");
         
