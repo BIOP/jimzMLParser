@@ -11,7 +11,7 @@
     
     <groupId>com.alanmrace</groupId>
     <artifactId>jimzmlparser</artifactId>
-    <version>1.0.7-BIOP-SNAPSHOT</version>
+    <version>1.0.7-BIOP</version>
 
     <name>jimzMLParser</name>
     <description>Java imzML (mass spectrometry imaging) and mzML (mass spectrometry) parser</description>
@@ -33,7 +33,7 @@
     <scm>
         <connection>scm:git:https://github.com/BIOP/jimzMLParser</connection>
         <developerConnection>scm:git:git@github.com:BIOP/jimzMLParser</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jimzmlparser-1.0.7-BIOP</tag>
         <url>https://github.com/BIOP/jimzMLParser</url>
     </scm>
 
